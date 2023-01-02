@@ -1,0 +1,12 @@
+.navbar{
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgb(225, 225, 225);
+	
+}
+.main{
+	padding-top: 60px;
+}
+.nav-link{
+	color: black;
+}
