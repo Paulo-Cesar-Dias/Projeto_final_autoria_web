@@ -4,9 +4,25 @@
 	background-color: rgb(225, 225, 225);
 	
 }
-.main{
-	padding-top: 60px;
+h1{
+	margin-left: 20px;
+	font-family: 'Brush Script MT';
+	font-size: 70px;
 }
 .nav-link{
 	color: black;
+}
+.apres{
+	background-color: rgb(202, 202, 202);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+	border-radius: 10px;
+}
+.aling-imagem-apres{
+	text-align: center;
+}
+.imagem-apres{
+	border-radius: 20px;
 }
