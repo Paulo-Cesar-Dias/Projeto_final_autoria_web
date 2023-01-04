@@ -16,15 +16,18 @@ h1{
 	background-color: rgb(202, 202, 202);
 	padding-top: 20px;
 	padding-bottom: 20px;
+
 	margin-left: 1.5%;
 	margin-right: 1.5%;
 	border-radius: 10px;
 }
-.aling-imagem-apres{
-	text-align: center;
-}
+
 .imagem-apres{
 	border-radius: 20px;
+}
+p{
+	font-size:20px;
+	color: black;
 }
 
 

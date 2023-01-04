@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gás e Água</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="/inicio/estilo_incio.css">
+    <link rel="stylesheet" href="/inicio/estilo_inicio.css">
 </head>
   <body>
       <nav class="navbar navbar-expand-lg">
@@ -39,7 +39,7 @@
                             Estimar Prox. Entrega
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="calc/calcula.html">Gás</a></li>
+                            <li><a class="dropdown-item" href="/inicio/calc/calcula.html">Gás</a></li>
                             <li><a class="dropdown-item" href="#">Água</a></li>
                             
                             
@@ -58,10 +58,20 @@
         -->
         <div class="main container-fluid">
             <h1>Calculadora</h1>
-            <P>Digite quando comprou seu gás:</P>
-            <input type="datetime-local" name="" id="">
-            <p><br>Digite quantas pessoas moram na casa:</p>
-            <input type="number" name="" id="">
+            <div class="row apres">
+                <div class="col-4">
+                    <P>Informe quando comprou seu gás:</P>
+                    <input type="date" name="" id="">
+                    <p><br>Digite quantas pessoas moram na casa:</p>
+                    <input type="number" name="" id="">
+                </div>
+                <div class="col-4 align-self-center">
+                    <button class="btn btn-secondary" type="submit">Calcular</button>
+                </div>
+                <div class="col-4 align-self-center">
+                    <input type="text" name="" disabled id="">
+                </div>
+            </div>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
