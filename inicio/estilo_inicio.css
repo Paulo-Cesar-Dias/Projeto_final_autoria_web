@@ -31,7 +31,33 @@ p{
 }
 
 
+#saida{
+	font-size: 25px;
+	width: 100%;
+	resize: none;
+	border-radius: 10px;
+	padding-left: 20px;
+	color: rgb(0, 0, 0);
+}
+.botaocalc{
+	font-size: 150%;
+}
 
-
-
+.calculadora{
+	background-color: rgb(202, 202, 202);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin-left: 1.5%;
+	padding-right: 10px;
+	border-radius: 10px;
+	width: 85%;
+}
+.inputs-calc{
+	padding-top: 10px;
+	padding-left: 10px;
+	background-color: rgb(144, 144, 144);
+	border-radius: 10px;
+	
+}
 /*CSS para as calculadoras*/
