@@ -8,51 +8,48 @@
     <link rel="stylesheet" href="../estilo_inicio.css">
 </head>
   <body>
-      <nav class="navbar navbar-expand-lg">
-          <a class="texto-menu navbar-brand" href="../index_inicio.html">Gás e Água</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    
-                    <li class="nav-item">
-                        <a class="texto-menu nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="img/perfil.png" alt="" width="22"></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="texto-menu nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Entrega
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Gás</a></li>
-                            <li><a class="dropdown-item" href="#">Água</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Alterar endereço</a></li>
-                            
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Estimar Prox. Entrega
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="calcula_gas.html">Gás</a></li>
-                            <li><a class="dropdown-item" href="#">Água</a></li>
-                            
-                            
-                        </ul>
-                    </li>
-                    
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
-                </form>
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg">
+        <a class="texto-menu navbar-brand" href="../index_inicio.html">Gás e Água</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  
+                  <li class="nav-item">
+                      <a class="imagperf" href="#"><img src="../img/image_perfil.png" alt="" width="34"></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Entrega
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Gás</a></li>
+                          <li><a class="dropdown-item" href="#">Água</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Alterar endereço</a></li>
+                          
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Estimar Prox. Entrega
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="calcula_gas.html">Gás</a></li>
+                          <li><a class="dropdown-item" href="calcula_agua.html">Água</a></li>
+                          
+                          
+                      </ul>
+                  </li>
+                  
+              </ul>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+              </form>
+          </div>
+      </nav>
         <!--
             dentro dessa div👇 vai ficar tudo do site. A parte de cima era apenas a barra de navegação.
         -->
@@ -66,7 +63,7 @@
                     <input type="number" name="pessoas" id="pessoas">
                     <p>
                         <br>
-                        <button class="botaocalc btn btn-success" onclick="funcdata()" type="submit">Calcular</button>
+                        <button class="botaocalc btn " onclick="funcdata()" type="submit">Calcular</button>
                     </p>
                 </div>
 
@@ -105,7 +102,7 @@
                     
                     saida.value=(base_de_dias-result).toFixed(0)+" dias restantes"
                 }
-                if(base_de_dias-result>120){
+                if(20-result>20){
                     saida.value="Você nem comprou a Águas"
                 }else if(Number.isNaN(result)){
                     saida.value='Você esqueceu de informar a data'
