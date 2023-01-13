@@ -120,6 +120,19 @@ p{
 	text-align: center;
 }
 
+.form_ped_gas{
+	border-style: none;
+	background-color: blue;
+	border-radius: 15px;
+	padding: 1%;
+}
+
+.form_gas{
+	background-color: rgb(0, 0, 141);
+	border-radius: 10px;
+	padding: 1%;
+	width: 40%;
+}
 
 
 /*CSS para as calculadoras*/
