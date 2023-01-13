@@ -164,4 +164,15 @@ body{
 	color:black ;
 	font-family: 'Brush Script MT';
 
+} 
+
+.descricag { 
+	font-size: 25px;
+	color: white; 
+	background-color: rgb(14, 0, 165);
+	padding: 20px;
+	border-radius: 20px;
+	margin-left: 10px;
+	margin-bottom: 10%;
+	margin-top: 2%;
 }
