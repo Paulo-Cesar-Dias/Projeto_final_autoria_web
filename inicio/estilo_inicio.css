@@ -64,6 +64,11 @@ h2{
 	margin-right: 1.5%;
 	border-radius: 20px;
 }
+.carousel-inner{
+	border-radius: 15px;
+	transition: 0.4s;
+}
+
 .imagperf{
 	padding-left: 5px;
 }
