@@ -163,4 +163,11 @@ p{
 }
 body{
 	background-color: yellow;
+} 
+
+.msginicialgas { 
+	font-size:50px;
+	color:black ;
+	font-family: 'Brush Script MT';
+
 }
