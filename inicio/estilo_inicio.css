@@ -133,7 +133,8 @@ p{
 }
 
 .form_ped_gas{
-	border-style: none;
+	border-style: none;  
+	text-align: center;
 	background-color: blue;
 	border-radius: 15px;
 	padding: 1%;
@@ -147,7 +148,14 @@ p{
 	width: 40%;
 } 
 
-.$$$
+.form_ag {  
+	background-color: rgb(0, 0, 141);
+	border-radius: 10px; 
+	text-align: center ;
+	padding: 1%;
+	width: 40%;
+
+}
 
 
 /*CSS para as calculadoras*/
