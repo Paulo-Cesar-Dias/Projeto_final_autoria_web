@@ -79,7 +79,9 @@
             var dia = String(data.getDate()).padStart(2, '0')
             var mes = String(data.getMonth() + 1).padStart(2, '0')
             var ano = data.getFullYear()
-            dataAtual = ano+'-'+mes+'-'+dia
+            dataAtual = ano+'-'+mes+'-'+dia 
+
+            
           
             function funcdata() {
 
@@ -106,7 +108,9 @@
                     saida.value="Você nem comprou o gás"
                 }else if(Number.isNaN(result)){
                     saida.value='Você esqueceu de informar a data, você tem Alzheimer'
-                }
+                } 
+
+                
 
             }
         </script>

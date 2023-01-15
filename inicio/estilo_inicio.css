@@ -47,7 +47,8 @@ h2{
 	margin-left: 20px;
 }
 .msgboasvindas{
-	font-size: 25px;
+	font-size: 25px; 
+	text-align: left;
 	background-color: rgb(14, 0, 165);
 	padding: 20px;
 	border-radius: 20px;
@@ -140,10 +141,13 @@ p{
 
 .form_gas{
 	background-color: rgb(0, 0, 141);
-	border-radius: 10px;
+	border-radius: 10px; 
+	text-align: center;
 	padding: 1%;
 	width: 40%;
-}
+} 
+
+.$$$
 
 
 /*CSS para as calculadoras*/
@@ -193,10 +197,9 @@ body{
 .descricag { 
 	font-size: 25px;
 	color: white; 
+	text-align: center;
 	background-color: rgb(14, 0, 165);
 	padding: 20px;
-	border-radius: 20px;
-	margin-left: 10px;
-	margin-bottom: 10%;
-	margin-top: 2%;
+	
 }
+
