@@ -138,13 +138,9 @@ p{
 	background-color: blue;
 	border-radius: 15px;
 	padding: 1%; 
-<<<<<<< HEAD
 	margin-left: 10%;
 	margin-right: 10%;
-=======
-	width: 100%;
->>>>>>> 458d05ee3af52e2cdac0bedba8dd7c140a19bd5b
-	
+	margin-bottom: 2%;
 }
 
 .form_gas{
