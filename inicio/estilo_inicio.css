@@ -138,6 +138,8 @@ p{
 	background-color: blue;
 	border-radius: 15px;
 	padding: 1%; 
+	margin-left: 10%;
+	margin-right: 10%;
 	
 }
 
@@ -152,10 +154,14 @@ p{
 .form_ag {  
 	background-color: rgb(0, 0, 141);
 	border-radius: 10px; 
-	text-align: center ;
 	padding: 1%;
 	width: 40%;
+	text-align: center;
+	margin-left: 30%;
 
+}
+.alinhamento{
+	text-align: center;
 }
 
 
