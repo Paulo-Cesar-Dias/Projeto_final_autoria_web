@@ -51,7 +51,7 @@ h2{
 	text-align: left;
 	background-color: rgb(14, 0, 165);
 	padding: 20px;
-	border-radius: 20px;
+	border-radius: 10px;
 	margin-left: 10px;
 	margin-bottom: 10%;
 	margin-top: 2%;
@@ -117,7 +117,7 @@ p{
 
 .conteudo:hover {
 
-	transform: scale(1.1);
+	transform: scale(1.05);
 	
 }
 .linhas{
@@ -160,10 +160,10 @@ p{
 	margin-left: 30%;
 
 }
-.alinhamento{
-	text-align: center;
+.lp{
+	margin-left: 1%;
+	margin-right: 1%;
 }
-
 
 /*CSS para as calculadoras*/
 
@@ -206,7 +206,7 @@ body{
 	font-size:50px;
 	color:black ;
 	font-family: 'Brush Script MT';
-
+	margin-left: 1%
 } 
 
 .descricag { 
@@ -215,6 +215,6 @@ body{
 	text-align: center;
 	background-color: rgb(14, 0, 165);
 	padding: 20px;
-	
+	border-radius: 10px;
 }
 
