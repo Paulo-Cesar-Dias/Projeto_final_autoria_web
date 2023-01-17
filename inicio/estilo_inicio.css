@@ -165,6 +165,23 @@ p{
 	margin-right: 1%;
 }
 
+.descricag { 
+	font-size: 25px;
+	color: white; 
+	text-align: center;
+	background-color: rgb(14, 0, 165);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.tiljacadas{
+	color: azure;
+}
+
+.al{
+	border-radius: 30px;
+}
+
 /*CSS para as calculadoras*/
 
 #saida{
@@ -209,19 +226,3 @@ body{
 	margin-left: 1%
 } 
 
-.descricag { 
-	font-size: 25px;
-	color: white; 
-	text-align: center;
-	background-color: rgb(14, 0, 165);
-	padding: 20px;
-	border-radius: 10px;
-}
-
-#mostrar{
-	display: none;
-}
-
-#passar_mouse:hover #mostrar{
-	display: block;
-}
