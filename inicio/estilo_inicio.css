@@ -218,3 +218,10 @@ body{
 	border-radius: 10px;
 }
 
+#mostrar{
+	display: none;
+}
+
+#passar_mouse:hover #mostrar{
+	display: block;
+}
