@@ -22,6 +22,9 @@
 .navbar:hover .texto-menu{
 	background-color: rgb(0, 0, 255);
 }
+.serv{
+	text-align: center;
+}
 h1{
 	margin-left: 20px;
 	font-family: 'Brush Script MT';
