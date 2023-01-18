@@ -102,7 +102,7 @@ p{
 	margin-right: 10%;
 	margin-left: 10%;
     border-radius: 15px;
-	margin-bottom: 2%;
+	margin-bottom: 5%;
 	padding: 1%
 	
 }
@@ -228,4 +228,14 @@ body{
 	font-family: 'Brush Script MT';
 	margin-left: 1%
 } 
+.conteudo-rodap{
+background-color: rgb(255, 0, 0);
+border: 2px;
 
+height: 40px;
+text-align: center;
+transition: all 0.5s;
+}
+.main{
+	margin-top: 4%;
+}
