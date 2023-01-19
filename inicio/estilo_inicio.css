@@ -4,6 +4,8 @@
 	padding-right: 20px;
 	background-color: rgb(8, 0, 255);
 	transition: all 1s;
+	padding-top:-5;
+	padding-bottom:-5;
 	
 }
 .navbar:hover{
@@ -70,7 +72,7 @@ h2{
 }
 .carousel-inner{
 	border-radius: 15px;
-	transition: 0.4s;
+	
 }
 
 .imagperf{
@@ -220,7 +222,11 @@ p{
 }
 body{
 	background-color: yellow;
+	
 } 
+::-webkit-scrollbar {
+	display:none;
+}
 
 .msginicialgas { 
 	font-size:70px;
@@ -237,5 +243,5 @@ text-align: center;
 transition: all 0.5s;
 }
 .main{
-	margin-top: 4%;
+	margin-top: 70px;
 }
