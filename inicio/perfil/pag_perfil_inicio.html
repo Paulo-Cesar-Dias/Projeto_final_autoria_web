@@ -17,6 +17,18 @@
         text-align: center;
         margin-bottom: 5%;
       }
+
+      .info_cadastro{
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: blue;
+        padding: 20px;
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: center;
+        margin-bottom: 5%;
+        margin-top: 50px;
+      }
     </style>
 </head>
   <body> 
@@ -34,7 +46,6 @@
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="../index.html">Início</a></li>
                         <li><a class="dropdown-item" href="../compras/historico_compras.html">Compras</a></li>
-                        <li><a class="dropdown-item" href="../cadastro/meu_cadastro.html">Meu cadastro</a></li>
                         <li><a class="dropdown-item" href="#"></a></li>
                       </ul>
                   </li>
@@ -46,8 +57,38 @@
           </div>
       </nav>
       <!-- visualização no site -->
-      <div class="main container-fluid">
-        <h1>Seu Perfil</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+      <h1>Entre com seu cadastro ou crie um cadastro agora mesmo!</h1>
+      <div class="info_cadastro">
+          <form action="">
+            <h1 class="tiljacadas">Já sou cadastrado!</h1>
+            <br>
+            <p class="form_ag">
+              <label for="email"> Digite o email cadastrado:</label>
+              <input type="text" name="email" id="email" placeholder="Digite o email cadastrado"> <br>
+            </p>
+            <p class="form_ag">
+              <label for="cpf">Digite CPF do cadastrado:</label><br>
+              <input type="text" name="cpf" id="cpf" placeholder="Digite o CPF cadatrado"> <br>
+            </p>
+            <p class="form_ag">
+              <label for="senha">Digite a senha cadastrada:</label>
+              <input type="password" name="senha" id="senha" placeholder="Digite sua senha"> <br>
+            </p>
+            
+            <a class="texto-menu navbar-brand" href="../perfil/pag_perfil_inicio.html">Entrar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          </form>
+        </div>
+
+        <div class="info_cadastro">
+            <h1 class="tiljacadas">Não sou cadastrado!</h1>
+
+            <a class="texto-menu navbar-brand" href="../cadastro/cadastre_se.html">Cadastre-se</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        </div>
 </html>
