@@ -45,31 +45,31 @@
 
                     <p class="form_ag">
                         <label for="email"> Email: </label> <br>
-                            <input type="text" id="email" name="email" placeholder="Digite o email" class="valid">
+                            <input type="text" id="email" name="email" placeholder="Digite o email" class="valid" required>
                     </p>
                     <p class="form_ag">
                         <label for="nome"> Nome completo: </label> <br>
-                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="valid">          
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="valid" required>          
                     </p>    
 
                     <p class="form_ag"> 
                         <label for="cpf"> CPF: </label> <br>
-                            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" class="valid">  
+                            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" class="valid" required>  
                     </p>
 
                     <p class="form_ag"> 
                         <label for="fone"> Telefone: </label> <br>
-                            <input type="text" id="fone" name="fone" placeholder="Digite o telefone" class="valid">  
+                            <input type="text" id="fone" name="fone" placeholder="Digite o telefone" class="valid" required>  
                     </p> 
 
                     <p class="form_ag"> 
                          <label for="senha"> Senha: </label> <br>
-                            <input type="password" id="senha" name="senha" placeholder="Digite a senha" class="valid">  
+                            <input type="password" id="senha" name="senha" placeholder="Digite a senha" class="valid" required>  
                     </p> 
 
                     <p class="form_ag"> 
                         <label for="senhaig"> Repetir senha:</label> <br>
-                            <input type="password" id="senhaig" name="senhaig" placeholder="Repita a senha" class="valid">  
+                            <input type="password" id="senhaig" name="senhaig" placeholder="Repita a senha" class="valid" required>  
                     </p>
                         
                 </p> 
@@ -83,12 +83,12 @@
 
         <script type="text/javascript">
 
-            const form = document.getElementById('cadas').value;
-            const campos = querySelectorAll('.valid').value;
+            var senha = document.getElementById('senha');
+            var senhaig = document.getElementById('senhaig');
 
             function validUsuario() {
                 
-                if (campos[4].value == '1234' && campos[5].value == '1234') {
+                if (senha.value == senhaig.value) {
                     alert('Usuário cadastrado');
                 }
                 else{
