@@ -39,43 +39,43 @@
 
         <p class="msginicialgas">Cadastre-se</p>
          
-        <form action="">
+        <form id="cadas" action="">
             <div class="form_ped_gas"> 
                 <p class="alinhamento">
 
                     <p class="form_ag">
                         <label for="email"> Email: </label> <br>
-                            <input type="text" id="email" name="email" placeholder="Digite o email">
+                            <input type="text" id="email" name="email" placeholder="Digite o email" class="valid">
                     </p>
                     <p class="form_ag">
                         <label for="nome"> Nome completo: </label> <br>
-                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">          
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="valid">          
                     </p>    
 
                     <p class="form_ag"> 
                         <label for="cpf"> CPF: </label> <br>
-                            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">  
+                            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" class="valid">  
                     </p>
 
                     <p class="form_ag"> 
                         <label for="fone"> Telefone: </label> <br>
-                            <input type="text" id="fone" name="fone" placeholder="Digite o telefone">  
+                            <input type="text" id="fone" name="fone" placeholder="Digite o telefone" class="valid">  
                     </p> 
 
                     <p class="form_ag"> 
                          <label for="senha"> Senha: </label> <br>
-                            <input type="password" id="senha" name="senha" placeholder="Digite a senha">  
+                            <input type="password" id="senha" name="senha" placeholder="Digite a senha" class="valid">  
                     </p> 
 
                     <p class="form_ag"> 
                         <label for="senhaig"> Repetir senha:</label> <br>
-                            <input type="password" id="senhaig" name="senhaig" placeholder="Repita a senha">  
+                            <input type="password" id="senhaig" name="senhaig" placeholder="Repita a senha" class="valid">  
                     </p>
                         
                 </p> 
                 <br>
                 <div>
-                    <button class="botao" onclick="cad()">Cadastrar</button>
+                    <button type="submit" class="botao" onclick="validandoUser()">Cadastrar</button>
                 </div>
 
             </div>
@@ -83,27 +83,24 @@
 
         <script>
 
-            function cad(){
+            const form = document.getElementById('cadas');
+            const campos = document.querySelectorAll('.valid');
 
-                var email = document.getElementById('email').value;
-                var nome = document.getElementById('nome').valeu;
-                var cpf = document.getElementById('cpf').value;
-                var telefone = document.getElementById('fone').valeu;
-                var senha = document.getElementById('senha').value;
-                var senhaig = document.getElementById('senhaig').valeu;
+            function validandoUser(){
+                if(campos[4].value == campos[5].value){
 
-                if(senha == senhaig){
-
-                    alert("Seu cadastro foi bem sucedido");
-                    location.href = "meu_cadastro.html";
-
-                }else if(senha =! senhaig){
-
-                    alert("Senhas diferentes");
+                    digiteAlgo();
+                    alert('Seu usuário foi cadastrado');
+                    location.href = '../cadastro/meu_cadastro.html';
 
                 }
-                
+                else{
+
+                    alert('Suas senhas são incompatíveis');
+
+                }
             }
+
 
         </script>
 
