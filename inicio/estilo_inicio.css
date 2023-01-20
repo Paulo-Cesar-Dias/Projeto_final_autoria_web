@@ -206,7 +206,30 @@ p{
 	font-size: 20px;
 	border-style: none;
 
-}
+} 
+
+.info_hist{
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: blue;
+	padding: 20px;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 50px;
+  } 
+
+  .info_perfil{
+	border: 1px solid black;
+	border-radius: 10px;
+	background-color: blue;
+	padding: 20px;
+	margin-right: 10%;
+	margin-left: 10%;
+	text-align: center;
+	margin-bottom: 5%;
+  }
 
 /*CSS para as calculadoras*/
 
