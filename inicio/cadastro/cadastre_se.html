@@ -75,47 +75,26 @@
                 </p> 
                 <br>
                 <div>
-                    <button type="submit" class="botao" onclick="validandoUser()">Cadastrar</button>
+                    <button type="submit" class="botao" onclick="validUsuario()">Cadastrar</button>
                 </div>
 
             </div>
         </form>
 
-        <script>
+        <script type="text/javascript">
 
-            const form = document.getElementById('cadas');
-            const campos = document.querySelectorAll('.valid');
+            const form = document.getElementById('cadas').value;
+            const campos = querySelectorAll('.valid').value;
 
-            function validandoUser(){
-
-                if(campos[0].value && campos[1].value && campos[2].value && campos[3].value && campos[4].value && campos[5].value 
-                != 0 && campos[4].value == campos[5].value){
-
-                    alert('Seu usuário foi cadastrado!');
-                    location.href = '../cadastro/meu_cadastro.html';
-
-                }
-                else if(campos[0].value || campos[1].value || campos[2].value || campos[3].value == 0 && 
-                campos[4].value == campos[5].value){
-
-                    alert('Senhas corretas mas te falta adicionar algum dado');
-
-                }
-                else if(campos[0].value || campos[1].value || campos[2].value || campos[3].value == 0 && 
-                campos[4].value != campos[5].value){
-
-                    alert('Há algo faltando e as senhas estõ incorretas');
-
-                }
-                else if(campos[0].value && campos[1].value && campos[2].value && campos[3].value && campos[4].value && campos[5].value 
-                != 0 && campos[4].value != campos[5].value){
-                    
-                    alert('Somente as senhas estão incorretas');
-
-                }
+            function validUsuario() {
                 
+                if (campos[4].value == '1234' && campos[5].value == '1234') {
+                    alert('Usuário cadastrado');
+                }
+                else{
+                    alert('Suas senhas são incompatíveis');
+                }
             }
-
 
         </script>
 
