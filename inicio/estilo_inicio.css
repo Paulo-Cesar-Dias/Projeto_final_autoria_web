@@ -187,6 +187,27 @@ p{
 	border-radius: 30px;
 }
 
+.botao{
+	width: 10%;
+	padding: 1%;
+	background-color: red;
+	border-radius: 10px;
+	color: aliceblue;
+	font-size: 20px;
+	border-style: none;
+}
+
+.btn_cadas{
+	width: 20%;
+	padding: 1%;
+	background-color: red;
+	border-radius: 10px;
+	color: aliceblue;
+	font-size: 20px;
+	border-style: none;
+
+}
+
 /*CSS para as calculadoras*/
 
 #saida{
