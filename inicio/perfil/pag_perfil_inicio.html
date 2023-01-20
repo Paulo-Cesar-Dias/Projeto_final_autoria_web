@@ -91,8 +91,14 @@
             </div>
             <script type="text/javascript">
               function valide() {
-
-                location.href="../cadastro/meu_cadastro.html"
+                var senha=document.getElementById("senha").value;
+                var email=document.getElementById("email").value;
+                  if (email=="paulocesar" && senha=="1234") {
+                    alert("Você fez loguin")
+                    location.href="../cadastro/meu_cadastro.html"
+                  }else{
+                    alert("Senha ou Email errado?")
+                  }
 
               }
             </script>
