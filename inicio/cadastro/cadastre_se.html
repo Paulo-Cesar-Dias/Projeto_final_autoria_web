@@ -40,7 +40,7 @@
 
         <p class="msginicialgas">Cadastre-se</p>
          
-        <form id="cadas" action="">
+        <form id="cadas">
             <div class="form_ped_gas"> 
                 <p class="alinhamento">
 
@@ -76,31 +76,38 @@
                 </p> 
                 <br>
                 <div>
-                    <button type="submit" class="botao" onclick="validUsuario()">Cadastrar</button>
+                    <button onclick="cadastrar()" id="btnCadastrar" type="submit" class="botao">Cadastrar</button>
                 </div>
-
+                
             </div>
         </form>
 
         <script type="text/javascript">
 
-            var senha = document.getElementById('senha');
-            var senhaig = document.getElementById('senhaig');
+            function cadastrar(){
 
-            function validUsuario() {
+                var dadosForm = document.querySelector("#cadas");
+
+                var senha = document.getElementById("senha").value;
+                var repSenha = document.getElementById("senhaig").value;
+
                 
-                if (senha.value == senhaig.value) {
-                    alert('Usuário cadastrado');
-                }
-                else{
-                    alert('Suas senhas são incompatíveis');
+
+                if(senha == repSenha){
+                    alert("Você foi cadastrado com sucesso!");
+                    location.href ="../cadastro/meu_cadastro.html";
+                }else if(senha != repSenha){
+                    alert("Senhas incompatíveis!");
                 }
             }
 
+
         </script> 
-                    <div class="conteudo-rodap fixed-bottom">
-                        <p>Copyright  -  HiperMegaSuperGás  - IFRN Cang 2023</p>
-                    </div>
+
+        <br>
+        <div class="conteudo-rodap fixed-bottom">
+            <p>Copyright  -  HiperMegaSuperGás  - IFRN Cang 2023</p>
+        </div>
         </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
