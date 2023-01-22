@@ -46,7 +46,7 @@
 
                     <p class="form_ag">
                         <label for="email"> Email: </label> <br>
-                            <input type="text" id="email" name="email" placeholder="Digite o email" class="valid" required>
+                            <input type="email" id="email" name="email" placeholder="Digite o email" class="valid" required>
                     </p>
                     <p class="form_ag">
                         <label for="nome"> Nome completo: </label> <br>
@@ -76,7 +76,7 @@
                 </p> 
                 <br>
                 <div>
-                    <button onclick="cadastrar()" id="btnCadastrar" type="submit" class="botao">Cadastrar</button>
+                    <button id="btnCadastrar" type="submit" class="botao">Cadastrar</button>
                 </div>
                 
             </div>
@@ -84,23 +84,35 @@
 
         <script type="text/javascript">
 
-            function cadastrar(){
+            const btnCadastrar = document.querySelector("#btnCadastrar");
 
-                var dadosForm = document.querySelector("#cadas");
+            btnCadastrar.addEventListener("click", function (event){
 
-                var senha = document.getElementById("senha").value;
-                var repSenha = document.getElementById("senhaig").value;
+                event.preventDefault();
 
-                
+                const email = document.querySelector("#email").value;
+                const nome = document.querySelector("#nome").value;
+                const cpf = document.querySelector("#cpf").value;
+                const telefone = document.querySelector("#fone").value;
+                const senha = document.querySelector("#senha").value;
+                const repSenha = document.querySelector("#senhaig").value;
 
-                if(senha == repSenha){
+                if(senha == repSenha && senha != 0){
+
                     alert("Você foi cadastrado com sucesso!");
-                    location.href ="../cadastro/meu_cadastro.html";
-                }else if(senha != repSenha){
-                    alert("Senhas incompatíveis!");
-                }
-            }
+                    location.href="../cadastro/meu_cadastro.html";
 
+                }else if(senha != repSenha){
+
+                    alert("Suas Senhas são incompatíveis!");
+
+                }else if(senha == 0){
+
+                    alert("Você precisa de uma senha!");
+
+                }
+                
+            });
 
         </script> 
 
