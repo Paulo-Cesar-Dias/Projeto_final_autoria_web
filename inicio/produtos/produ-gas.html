@@ -125,50 +125,50 @@
                         <label for="nome"> De que maneira deseja pagar? </label>  
 
                         <label class="container"> Pix
-                        <input type="radio" id="nome" name="pag">  
+                        <input type="radio" id="tipopag" name="pag" value="pix">  
                         </label> 
 
                         <label class="container"> Dinheiro
-                        <input type="radio" id="nome" name="pag">  
+                        <input type="radio" id="tipopag" name="pag" value="din">  
                         </label> 
 
                         <label class="container"> Cartão crédito/débito
-                        <input type="radio" id="nome" name="pag">  
+                        <input type="radio" id="tipopag" name="pag" value="cad">  
                         </label>
                         </p> 
                     </p>
                     <br>
                     <div>
-                        <button id="finzalizar_gas" type="submit" class="botao">Finalizar</button>
+                        <button id="finalizacao" onclick="finalizar()" type="submit" class="botao">Finalizar</button>
                     </div>
-                        
                 </div>
             </form> 
+
+            <script type="text/javascript">
+
+                function finalizar(){
+
+                    const btnFin = document.querySelector("finalizacao");
+
+                    const quant = document.querySelector("#qtd").value;
+                    const nomeRemet = document.querySelector("#nome").value;
+                    const endereco = document.querySelector("#endereco").value;
+                    const tipoPag = document.querySelector('input[name="pag"]').value;
+
+                    if(quant == 0 || nomeRemet == 0 || endereco == 0 || tipoPag != "din" || "pix" || "cad"){
+                        alert("Precisamos de todos os campos preenchidos");
+                    }else if(quant != 0 && nomeRemet != 0 && endereco != 0 && tipoPag == "din" || "pix" || "cad"){
+                        alert("Seu pedido foi enviado! Obrigado pela preferencia");
+                    }
+
+                }
+
+            </script>
             <br>
 
             <div class="conteudo-rodap fixed-bottom">
                 <p>Copyright  -  HiperMegaSuperGás  - IFRN Cang 2023</p>
             </div>
 
-            <script type="text/javascript">
-
-                const btnFinalizar = document.querySelector("#finalizar_gas");
-
-                btnFinalizar.addEventListener("click", function(event){
-
-                    event.preventDefault();
-
-                    const qtdGas = document.querySelector("#qtd").value;
-                    const 
-
-                    if(){
-
-                    }
-
-
-
-                });
-
-            </script>
   </body>
 </html>
