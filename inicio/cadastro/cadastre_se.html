@@ -86,6 +86,7 @@
 
             const btnCadastrar = document.querySelector("#btnCadastrar");
 
+
             btnCadastrar.addEventListener("click", function (event){
 
                 event.preventDefault();
@@ -99,16 +100,28 @@
 
                 if(senha == repSenha && senha != 0){
 
-                    alert("Você foi cadastrado com sucesso!");
-                    location.href="../cadastro/meu_cadastro.html";
+                    if(email == 0 || nome == 0 || cpf == 0 || telefone == 0){
+                        alert("Não é possível cadastrar corretamente sem o preenchimento de todos os campos necessários!");
+                    }else{
+                        alert("Você foi cadastrado com sucesso!");
+                        location.href="../cadastro/meu_cadastro.html";
+                    }
 
                 }else if(senha != repSenha){
 
-                    alert("Suas Senhas são incompatíveis!");
+                    if(email == 0 || nome == 0 || cpf == 0 || telefone == 0){
+                        alert("Não é possível cadastrar corretamente sem o preenchimento de todos os campos necessários!");
+                    }else{
+                        alert("Suas senhas são incompatíveis!");
+                    }
+                    
+                }else if(senha == 0 || repSenha == 0){
 
-                }else if(senha == 0){
-
-                    alert("Você precisa de uma senha!");
+                    if(email == 0 || nome == 0 || cpf == 0 || telefone == 0){
+                        alert("Não é possível cadastrar corretamente sem o preenchimento de todos os campos necessários!");
+                    }else{
+                        alert("Cadastre uma senha corretamente");
+                    } 
 
                 }
                 

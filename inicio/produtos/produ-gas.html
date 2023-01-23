@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../estilo_inicio.css">
 </head>
   <body> 
-
     <!-- tags do site -->
       <nav class="navbar navbar-expand-lg fixed-top">
           <a class="texto-menu navbar-brand" href="../index.html">Gás e Água</a>
@@ -63,25 +62,21 @@
             dentro dessa div👇 vai ficar tudo do site. A parte de cima era apenas a barra de navegação.
         -->
         <div class="main container-fluid">
+            <p class="msginicialgas">
+                Site para a compra do gás (13kg)
+            </p>
+        </div>  
 
-        <p class="msginicialgas">
-            Site para a compra do gás (13kg)
-        </p>
-
-            </div>  
-
-            <br>
-            <div class="row lp">
-                <div class="col-6">
-                    <div class="conteudo">
-                                <p class="cent-cont">
-                                    <img src="../img/botijao_gas_cinza.png" alt="" width="300">
-                                </p>
-                                <p>Botijão 13 Kg <br> 105,00</p>
-                            </a>
-
-                    </div>
-                </div> 
+        <br>
+        <div class="row lp">
+            <div class="col-6">
+                <div class="conteudo">
+                    <p class="cent-cont">
+                        <img src="../img/botijao_gas_cinza.png" alt="" width="300">
+                    </p>
+                    <p>Botijão 13 Kg <br> 105,00</p>
+                </div>
+            </div> 
 
                 <div class=" col-6">
                     <div class="conteudo">
@@ -109,62 +104,71 @@
             <br> 
             <br>
 
-            <form action="">
-
-                    <div class="form_ped_gas"> 
-                    
-                        <p class="alinhamento">
-                            <p class="form_ag">
-                                <label for="qtd"> Quantas unidades deseja? </label> <br>
-                                    <input type="number" id="qtd" name="qtd" placeholder="Informe a quantidade">   
-                                    
-                            </p>    
-
-                            <p class="form_ag"> 
-                                <label for="nome"> Digite seu nome: </label> <br>
+            <form>
+                <div class="form_ped_gas"> 
+                    <p class="alinhamento">
+                        <p class="form_ag">
+                            <label for="qtd"> Quantas unidades deseja? </label> <br>
+                                <input type="number" id="qtd" name="qtd" placeholder="Informe a quantidade">   
+                        </p>    
+                        <p class="form_ag"> 
+                                <label for="nome"> Digite seu nome:</label> <br>
                                     <input type="text" id="nome" name="nome" placeholder="Qual o nome do destinatário">  
-                            </p>
-
-                            <p class="form_ag"> 
-                                <label for="endereco"> Digite o endereço onde deseje que o produto seja entregue:</label>
-                                    <input type="text" id="endereco" name="endereco" placeholder="Endereço onde será entregue" >  
-                            </p>
-                        
-                            <p class="form_ag"> 
-                            <label for="nome"> De que maneira deseja pagar? </label>  
-
-                            <label class="container"> Pix
-                            <input type="radio" id="nome" name="pag">  
-                            </label> 
-
-                            <label class="container"> Dinheiro
-                            <input type="radio" id="nome" name="pag">  
-                            </label> 
-
-                            <label class="container"> Cartão crédito/débito
-                            <input type="radio" id="nome" name="pag">  
-                            </label>
-                            
-                            </p> 
                         </p>
 
-                    
-                        <br>
-                        <a class="texto-menu navbar-brand" href="../Paginas- respostas/pagina_resposta.html">Finalizar pedido</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <p class="form_ag"> 
+                            <label for="endereco"> Digite o endereço onde deseje que o produto seja entregue:</label>
+                                <input type="text" id="endereco" name="endereco" placeholder="Endereço onde será entregue" >  
+                        </p>
                         
-                    </div>
+                        <p class="form_ag"> 
+                        <label for="nome"> De que maneira deseja pagar? </label>  
 
+                        <label class="container"> Pix
+                        <input type="radio" id="nome" name="pag">  
+                        </label> 
+
+                        <label class="container"> Dinheiro
+                        <input type="radio" id="nome" name="pag">  
+                        </label> 
+
+                        <label class="container"> Cartão crédito/débito
+                        <input type="radio" id="nome" name="pag">  
+                        </label>
+                        </p> 
+                    </p>
+                    <br>
+                    <div>
+                        <button id="finzalizar_gas" type="submit" class="botao">Finalizar</button>
+                    </div>
+                        
+                </div>
             </form> 
+            <br>
 
             <div class="conteudo-rodap fixed-bottom">
                 <p>Copyright  -  HiperMegaSuperGás  - IFRN Cang 2023</p>
             </div>
-           
-        </div>  
 
-    </div>
+            <script type="text/javascript">
+
+                const btnFinalizar = document.querySelector("#finalizar_gas");
+
+                btnFinalizar.addEventListener("click", function(event){
+
+                    event.preventDefault();
+
+                    const qtdGas = document.querySelector("#qtd").value;
+                    const 
+
+                    if(){
+
+                    }
+
+
+
+                });
+
+            </script>
   </body>
 </html>
