@@ -125,15 +125,15 @@
                         <label for="nome"> De que maneira deseja pagar? </label>  
 
                         <label class="container"> Pix
-                        <input type="radio" id="tipopag" name="pag" value="pix">  
+                        <input type="radio" id="tipopag" name="pag" value="pix" required>  
                         </label> 
 
                         <label class="container"> Dinheiro
-                        <input type="radio" id="tipopag" name="pag" value="din">  
+                        <input type="radio" id="tipopag" name="pag" value="din" required>  
                         </label> 
 
                         <label class="container"> Cartão crédito/débito
-                        <input type="radio" id="tipopag" name="pag" value="cad">  
+                        <input type="radio" id="tipopag" name="pag" value="cad" required>  
                         </label>
                         </p> 
                     </p>
@@ -157,7 +157,7 @@
 
                     if(quant == "" || nomeRemet == "" || endereco == "" || tipoPag == ""){
 
-                        alert("Precisamos de todos os campor preenchidos para efetuarmos uma boa venda!");
+                        alert("Precisamos que todos os campos sejam preenchidos para efetuarmos seu pedido!");
 
                     }else{
 
