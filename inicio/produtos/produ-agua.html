@@ -148,7 +148,7 @@
                         </p>
 
                         <br>
-                        <a class="texto-menu navbar-brand" href="../Paginas- respostas/pagina_resposta.html">Finalizar pedido</a>
+                        <a class="texto-menu navbar-brand" href="#">Finalizar pedido</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
@@ -156,6 +156,32 @@
                     </div>
 
             </form> 
+            
+            <script type="text/javascript">
+
+                function finalizar(){
+
+                    const btnFin = document.querySelector("finalizacao");
+
+                    const quant = document.querySelector("#qtd").value;
+                    const nomeRemet = document.querySelector("#nome").value;
+                    const endereco = document.querySelector("#endereco").value;
+                    const tipoPag = document.querySelector('input[name="pag"]').value;
+
+                    if(quant == "" || nomeRemet == "" || endereco == "" || tipoPag == ""){
+
+                        alert("Precisamos de todos os campor preenchidos para efetuarmos uma boa venda!");
+
+                    }else{
+
+                        alert("Seu pedido foi bem efetuado!");
+                        location.href="../index.html";
+                    }
+
+                }
+
+            </script>
+            <br>
 
             <div class="conteudo-rodap fixed-bottom">
                 <p>Copyright  -  HiperMegaSuperGás  - IFRN Cang 2023</p>
