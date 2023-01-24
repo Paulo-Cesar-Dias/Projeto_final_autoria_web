@@ -139,7 +139,7 @@
                     </p>
                     <br>
                     <div>
-                        <button id="finalizacao" onclick="finalizar()" type="submit" class="botao">Finalizar</button>
+                        <input class="botao" type="submit" value="Finalizar" onclick=finalizar()>
                     </div>
                 </div>
             </form> 
@@ -155,10 +155,14 @@
                     const endereco = document.querySelector("#endereco").value;
                     const tipoPag = document.querySelector('input[name="pag"]').value;
 
-                    if(quant == 0 || nomeRemet == 0 || endereco == 0 || tipoPag != "din" || "pix" || "cad"){
-                        alert("Precisamos de todos os campos preenchidos");
-                    }else if(quant != 0 && nomeRemet != 0 && endereco != 0 && tipoPag == "din" || "pix" || "cad"){
-                        alert("Seu pedido foi enviado! Obrigado pela preferencia");
+                    if(quant == "" || nomeRemet == "" || endereco == "" || tipoPag == ""){
+
+                        alert("Precisamos de todos os campor preenchidos para efetuarmos uma boa venda!");
+
+                    }else{
+
+                        alert("Seu pedido foi bem efetuado!");
+                        location.href="../index.html";
                     }
 
                 }
